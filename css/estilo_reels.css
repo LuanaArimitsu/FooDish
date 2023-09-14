@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/*inicio sidebar*/
 .sidebar {
     position: fixed;
     top: 0;
@@ -156,8 +156,9 @@
   .sidebar > nav button:last-child {
     margin-top: auto;
   }
-/*Fim side bar*/
+/*Fim sidebar*/
 
+/*inicio reels*/
 #content{
     width: 1000px;
     height: auto;
@@ -324,3 +325,4 @@
     margin-top: 3px;
     font-size: 20px;
 }
+/*final reels*/
