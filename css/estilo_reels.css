@@ -169,8 +169,8 @@
 
 .container .reels_videos{
     position: relative;
-    width: 330px;
-    height: 550px;
+    width: 350px;
+    height: 650px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
     scroll-snap-type: y mandatory;
@@ -209,10 +209,11 @@
     color: #Fff;
     letter-spacing:  .3px;
     font-weight: 500;
+    font-size: 25px;
 }
 
 .container .reels_videos .videos .top i{
-    font-size: 20px;
+    font-size: 25px;
     user-select: none;
 }
 
@@ -234,12 +235,14 @@
 }
 
 .container .reels_videos .videos .icons div i{
-    font-size: 25px;
-    color: rgb(244, 135, 10);
+    font-size: 30px;
+    color: rgb(244, 89, 5);
 }
 
 .container .reels_videos .videos .icons div small{
-    color: #fff131;
+    color: #afb4f1;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .container .reels_videos .videos .icons img{
@@ -274,6 +277,7 @@
 .container .reels_videos .videos .user_perfil h4{
     letter-spacing:  .3px;
     margin-right: 5px;
+    font-size: 20px;
 }
 
 .container .reels_videos .videos .user_perfil button{
@@ -290,6 +294,7 @@
     cursor: pointer;
     user-select: none;
     color: #fff;
+    font-size: 15;
 }
 
 .container .reels_videos .videos .user_perfil p{
@@ -307,4 +312,5 @@
     font-size: .85em;
     padding-left: 5px;
     margin-top: 3px;
+    font-size: 20px;
 }
