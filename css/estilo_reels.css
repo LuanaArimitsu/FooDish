@@ -5,6 +5,168 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*inicio sidebar*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    background: #ffffff;
+    border-right: 1px solid #dbdbdb;
+    transition: 0.3s;
+    z-index: 10;
+  }
+  
+  .sidebar-header {
+    width: 100%;
+    margin-bottom: 44px;
+  }
+  
+  .logo-icon {
+    display: none;
+    font-size: 28px;
+    height: 35px;
+    width: 51px;
+    text-align: center;
+  }
+  
+  .logo-img {
+    margin-left: 14px;
+    height: 32px;
+  }
+  
+
+  .sidebar button {
+    height: 60px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  .sidebar button > span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 48px;
+    padding: 0 12px;
+    border-radius: 24px;
+    line-height: 1;
+  }
+ 
+  .sidebar button:hover > span {
+    background: #f2f2f2;
+  }
+  
+  .sidebar button:hover > span :is(i, img) {
+    scale: 1.05;
+  }
+  
+  .sidebar button > span > span {
+    transition: 0.3s;
+  }
+  
+  @media (width < 780px) {
+    .logo-img {
+      display: none;
+    }
+  
+    .logo-icon {
+      display: block;
+    }
+  
+    .sidebar {
+      width: 72px;
+    }
+  
+    .sidebar button > span {
+      width: 50px;
+    }
+  
+    .sidebar button > span > span {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  .sidebar button i {
+    position: relative;
+    font-size: 28px;
+    transition: 0.2s;
+  }
+  
+  .sidebar button img {
+    width: 28px;
+    height: 28px;
+    transition: 0.2s;
+  
+  }
+  
+  .sidebar button i > span {
+    display: grid;
+    place-items: center;
+    height: 20px;
+    padding: 0 4px;
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    border: 1px solid #ffffff;
+    background: #ff2f40;
+    color: #f9f9f9;
+    font-size: 12px;
+    font-family: BlinkMacSystemFont;
+    font-style: normal;
+  }
+  
+  .sidebar button i > em {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 2px;
+    right: -1px;
+    border: 1px solid #ffffff;
+    background: #ff2f40;
+    color: #f9f9f9;
+    font-size: 12px;
+    font-family: BlinkMacSystemFont;
+    font-style: normal;
+  }
+  
+  .sidebar button span {
+    font-size: 17px;
+  }
+  
+  .sidebar > nav {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .sidebar > nav button:last-child {
+    margin-top: auto;
+  }
+/*Fim sidebar*/
+
+/*inicio reels*/
+#content{
+    width: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -18,8 +180,8 @@
 
 .container .reels_videos{
     position: relative;
-    width: 330px;
-    height: 550px;
+    width: 350px;
+    height: 650px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
     scroll-snap-type: y mandatory;
@@ -30,6 +192,137 @@
     width: 100%;
     height: 100%;
     scroll-snap-align: start;
+}
+
+.container .reels_videos .videos video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1.5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .reels_videos .videos .top{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: #Fff;
 
 }
 
+.container .reels_videos .videos .top h4{
+    color: #Fff;
+    letter-spacing:  .3px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.container .reels_videos .videos .top i{
+    font-size: 25px;
+    user-select: none;
+}
+
+.container .reels_videos .videos .icons{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.container .reels_videos .videos .icons div{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .reels_videos .videos .icons div i{
+    font-size: 30px;
+    color: rgb(244, 89, 5);
+}
+
+.container .reels_videos .videos .icons div small{
+    color: #afb4f1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container .reels_videos .videos .icons img{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    margin-right: 5px;
+    box-shadow: 0 0 0 4px #fff;
+}
+
+.container .reels_videos .videos .user_perfil{
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    width: 80%;
+    color: #fff;
+}
+
+.container .reels_videos .videos .user_perfil img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.container .reels_videos .videos .user_perfil div{
+    display: flex;
+    align-items: center;
+}
+
+.container .reels_videos .videos .user_perfil h4{
+    letter-spacing:  .3px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.container .reels_videos .videos .user_perfil button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    letter-spacing:  .5px;
+    cursor: pointer;
+    user-select: none;
+    color: #fff;
+    font-size: 15;
+}
+
+.container .reels_videos .videos .user_perfil p{
+    margin-top: 5px;
+    min-height: 44px;
+    padding: 5px;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    font-size: 30px;
+}
+
+.container .reels_videos .videos .user_perfil span{
+    font-size: .85em;
+    padding-left: 5px;
+    margin-top: 3px;
+    font-size: 20px;
+}
+/*final reels*/
