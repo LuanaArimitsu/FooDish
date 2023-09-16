@@ -1,0 +1,267 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*inicio sidebar*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 250px;
+  height: 100%;
+  padding: 40px 10px 30px 10px;
+  background: #ffffff;
+  border-right: 1px solid #dbdbdb;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.sidebar-header {
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.logo-icon {
+  display: none;
+  font-size: 28px;
+  height: 35px;
+  width: 51px;
+  text-align: center;
+}
+
+.logo-img {
+  margin-left: 14px;
+  height: 32px;
+}
+
+
+.sidebar button {
+  height: 60px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.sidebar button > span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+  padding: 0 12px;
+  border-radius: 24px;
+  line-height: 1;
+}
+
+.sidebar button:hover > span {
+  background: #f2f2f2;
+}
+
+.sidebar button:hover > span :is(i, img) {
+  scale: 1.05;
+}
+
+.sidebar button > span > span {
+  transition: 0.3s;
+}
+
+@media (width < 780px) {
+  .logo-img {
+    display: none;
+  }
+
+  .logo-icon {
+    display: block;
+  }
+
+  .sidebar {
+    width: 72px;
+  }
+
+  .sidebar button > span {
+    width: 50px;
+  }
+
+  .sidebar button > span > span {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  
+}
+
+.sidebar button i {
+  position: relative;
+  font-size: 28px;
+  transition: 0.2s;
+}
+
+.sidebar button img {
+  width: 28px;
+  height: 28px;
+  transition: 0.2s;
+
+}
+
+.sidebar button i > span {
+  display: grid;
+  place-items: center;
+  height: 20px;
+  padding: 0 4px;
+  border-radius: 10px;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  border: 1px solid #ffffff;
+  background: #ff2f40;
+  color: #f9f9f9;
+  font-size: 12px;
+  font-family: BlinkMacSystemFont;
+  font-style: normal;
+}
+
+.sidebar button i > em {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 2px;
+  right: -1px;
+  border: 1px solid #ffffff;
+  background: #ff2f40;
+  color: #f9f9f9;
+  font-size: 12px;
+  font-family: BlinkMacSystemFont;
+  font-style: normal;
+}
+
+.sidebar button span {
+  font-size: 17px;
+}
+
+.sidebar > nav {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sidebar > nav button:last-child {
+  margin-top: auto;
+}
+
+
+.linksNav{
+  text-decoration: none;
+}
+/*Fim sidebar*/
+
+
+
+.container{
+  margin-top: 20px;
+}
+
+.img-profile {
+  margin-top: 20px;
+  border-radius: 100%;
+  -o-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%; 
+  max-width:200px; 
+  max-height:150px;
+}
+
+.username {
+  font-weight: 300; font-size: 28px;
+}
+
+.name {
+  font-size: 16px; display: inline; font-weight: 600 !important;
+}
+
+.profile-datas {
+  font-size: 16px;
+}
+
+.profile-desc {
+  font-size: 16px; 
+}
+
+.nav-feed {
+  border-bottom: none !important; 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.nav-link-1 {
+  color: #495057;
+  background-color: #fafafa !important;
+  border-color: gray #fff #fff !important;
+  border-top-right-radius: .0rem !important;
+  border-top-left-radius: .0rem !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.nav-link-2 {
+  color: #a2a8af;
+  background-color: #fafafa !important;
+  border-color: #fff #fff #fff !important;
+  border-top-right-radius: .0rem !important;
+  border-top-left-radius: .0rem !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.card {
+  border: 0px solid rgba(0,0,0,.125) !important;
+  border-radius: .0rem !important;
+}
+
+.card .card-img, .card-img-top {
+  border-top-left-radius: 0rem !important;
+  border-top-right-radius: 0rem !important;
+}
+
+.stories{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.form-control {
+  border-radius: .15rem !important;
+  padding: 0% !important; 
+  background-color: #fafafa !important; 
+  text-align: center; 
+  font-size: 15px !important;
+}
+
+.icons {
+  padding: 4%; 
+  font-size: 25px;
+}
+
+.button-edit {
+  color: black !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  border-color: #dae1e7 !important;
+}
+
+.btn {
+  padding: .100rem .50rem !important;
+}
