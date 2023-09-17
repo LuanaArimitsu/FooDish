@@ -376,6 +376,11 @@
 
   /* conteudo_ingredientes */
 
+  #style-titulo p{
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
   .titulo{
     display: flex;
     justify-content: center;
@@ -391,7 +396,7 @@
    .form-control {
     font-family: system-ui, sans-serif;
     font-size: 1rem;
-    font-weight: bold;
+    
     line-height: 1.1;
     display: grid;
     grid-template-columns: 1em auto;
