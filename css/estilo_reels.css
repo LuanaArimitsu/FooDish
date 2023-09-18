@@ -72,6 +72,11 @@
   .sidebar button > span > span {
     transition: 0.3s;
   }
+
+  .linksNav{
+    text-decoration: none;
+    color: #000;
+  }
   
   @media (width < 780px) {
     .logo-img {
