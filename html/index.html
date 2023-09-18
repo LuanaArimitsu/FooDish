@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<title>Foodish</title>
+</head>
+
+	<main>
+		<body>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" href="css/all.min.css">
+	    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+    <section class="login">
+        <div class="btns-login">
+            <button class="btn-entrar ativo" type="button">Entrar</button>
+            <button class="btn-cadastro" type="button">Criar conta</button>
+        </div>
+        <div class="container">
+            <form action="#" class="form-entrar ativo" method="post" id="entrar">
+                <div class="username-field ct-input">
+
+
+                	<img src="../uc2/img/logo.png" id="logo">
+
+                
+                    <input type="text" name="usuario-entrar" id="usuario-entrar" placeholder="Telefone, nome de usuário ou email" autofocus="">
+                </div>
+
+                <div class="senha-field ct-input">
+               
+                    <input type="password" name="senha-entrar" id="senha-entrar" placeholder="senha">
+                </div>
+
+
+                <button type="submit" class="submit">Entrar</button>
+
+
+
+
+
+
+               <hr id="li"> 
+               <p id="ou">ou</p> 
+               <hr id="lin">
+
+
+
+
+
+
+
+
+                <div id="gogle" > 
+                	<img  id="google" src="../uc2/img/google.png">
+                	<p><a href="#"> Faça login <br>
+                com o Google</a></p>
+            </div>
+
+ <a id="es" href="/" class="forgot">Esqueceu a senha?</a>
+
+
+
+
+
+
+
+
+
+
+               
+	            </form>
+
+
+
+
+
+
+
+
+
+
+
+
+            <form action="#" class="form-criar-conta" id="criar" method="post">
+                <div class="username-field ct-input">
+                	<img src="../uc2/img/logo.png" id="logo">
+
+
+
+
+
+                <div id="gogle" > 
+                	<img  id="google" src="../uc2/img/google.png">
+                	<p><a href="#"> Entrar <br>
+                com o Google</a></p></div>
+
+
+
+
+
+
+                		 <hr id="li"> 
+               <p id="ou">ou</p> 
+               <hr id="lin">
+
+
+               <br>	
+
+              
+                    <input type="text" name="usuario" id="usuario" placeholder="usuário">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-times-circle"></i>
+                    <span class="alert">O nome de usuário deve conter apenas números, letras (maiúsculas ou minúsculas) ou _ e deve possuir, ao menos, 5 caracteres.</span>
+                </div>
+                <div class="email-field ct-input">
+            
+                    <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-times-circle"></i>
+                    <span class="alert">O valor digitado não corresponde a um email.</span>
+                </div>
+                <div class="password-field ct-input">
+                   
+                    <input type="password" name="senha" id="senha" placeholder="senha">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-times-circle"></i>
+                    <span class="alert">A senha deve possuir no mínimo 8 caracteres, 1 letra maiúscula, 1 letra minúscula e 1 caractere especial.</span>
+                </div>
+                <div class="password-repeat-field ct-input">
+                  
+                    <input type="password" name="senharpt" id="senharpt" placeholder="Repita sua senha">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-times-circle"></i>
+                    <span class="alert">As senhas não correspondem</span>
+                </div>
+                <div class="termos-field">
+                    <input type="checkbox" name="termos" id="termos">
+                    <label for="termos">Li e concordo com os <a href="/">Termos e Condições</a></label>
+                </div>
+
+                <button type="submit" class="submit" id="submit-conta">Criar conta</button>
+            </form>
+        </div>
+    </section>
+    <button class="lightdarkmode" aria-label="ativar darkmode ou lightmode" type="button"><i class="fa-solid fa-sun"></i></button>
+
+	</main>
+	
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block" src="../uc2/img/celular.png" alt="Primeiro Slide"  id="um">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block" src="../uc2/img/celular1.png" alt="Segundo Slide" id="um">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block" src="../uc2/img/celular1.png" alt="Terceiro Slide"  id="um">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+	<script>
+		const btns = document.querySelectorAll('.btns-login button')
+const allInputs = document.querySelectorAll('.ct-input input')
+const inputsCriarConta = document.querySelectorAll('#criar .ct-input input')
+const alertas = document.querySelectorAll('.alert')
+const submitBtn = document.querySelector('#submit-conta')
+const inputSenhaRpt = document.querySelector('#senharpt')
+const termosInput = document.querySelector('#termos')
+const btnDarkmode = document.querySelector('.lightdarkmode')
+let inputField
+
+//A senha deve possuir, ao menos, 10 caracteres. Letras maiusculas e minusculas (obrigatorio), caracteres especiais (@:;<.>/*-+_+(*%¨&*()||\'"!@#$$%"), e umnumero, 
+const regex = {
+    usuario: /^\w{5,}/,
+    email: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+    senha: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
+    senharpt: undefined
+}
+
+allInputs.forEach((item) => {
+item.addEventListener('keydown', (k) => {
+    if (k.keyCode === 32) {
+        k.preventDefault()
+    }
+})
+})
+
+function changeForm(i){
+
+    for (let form of document.forms) form.classList.remove('ativo')
+    for (let btn of btns) btn.classList.remove('ativo')
+
+    document.forms[i].classList.add('ativo')
+    btns[i].classList.add('ativo')
+
+}
+
+btns.forEach((item, index) => {
+
+    item.addEventListener('click', () => {
+        changeForm(index)
+    })
+
+})
+
+
+function contemClasse(classe) {
+    return inputField.classList.contains(classe);
+}
+
+function eliminarClasse(classe) {
+    inputField.classList.remove(classe);
+}    
+
+
+function validateInput(input, index) {
+
+    const { value, id } = input;
+    inputField = input.parentElement;
+
+    if (contemClasse('invalido')) eliminarClasse('invalido');
+    if (contemClasse('valido')) eliminarClasse('valido');
+
+    if (regex[id]) {
+        if (!(value).match(regex[id])) {
+            alertas[index].style.display = 'block';
+            inputField.classList.add('invalido');
+        } else {
+            alertas[index].style.display = 'none';
+            inputField.classList.add('valido');
+        }
+    }
+
+    if (id === 'senha') {
+        regex.senharpt = new RegExp('^' + value + '$');
+        validateInput(inputSenhaRpt, 3)
+    }
+}
+
+inputsCriarConta.forEach((input, index) => 
+input.addEventListener('change', (event) => validateInput(event.target, index))
+)
+
+function submitForm(event) {
+
+    inputsCriarConta.forEach((input,index) => validateInput(input, index));
+
+    const arrayInputs = Array.from(inputsCriarConta)
+
+    function isInvalid(element) {
+        return element.parentElement.classList.contains('invalido')
+    }
+
+    if (arrayInputs.some(isInvalid) || !termosInput.checked) {
+        event.preventDefault()
+    }
+}
+
+submitBtn.addEventListener('click', submitForm)
+
+
+// lightmode e darkmode 
+
+function changeMode() {
+    document.body.classList.toggle('darkmode');
+}
+
+btnDarkmode.addEventListener('click', changeMode)
+	</script>
+</body>
+</html>

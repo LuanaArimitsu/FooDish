@@ -75,6 +75,7 @@ body{
   .sidebar button > span > span {
     transition: 0.3s;
   }
+
   
   @media only screen and (max-width: 468px) {
     .logo-img {
@@ -97,6 +98,12 @@ body{
       opacity: 0;
       visibility: hidden;
     }
+
+    .linksNav{
+      display: none;
+      text-decoration: none;
+    }
+   
   }
   
   .sidebar button i {
@@ -158,6 +165,11 @@ body{
   
   .sidebar > nav button:last-child {
     margin-top: auto;
+  }
+
+  .linksNav{
+    text-decoration: none;
+    color: #000;
   }
 /*Fim sidebar*/
 
@@ -333,18 +345,24 @@ ul{width: 400px;
      margin-right: 300px;
      }
   
-     .jesus{
+     .caixinha1{
       display: flex;
       flex-direction: row;
       margin-left: -180px;
      }
   
-     .Deus{
+     .caixinha2{
       display: flex;
       flex-direction: row;
 
      margin-left: -150px;
      }
+
+     .linksNav{
+      display: none;
+      text-decoration: none;
+    }
+
 }
 
 /*visualizacao tablet*/
@@ -423,5 +441,8 @@ ul{width: 400px;
   margin-top: 40px;
  }
 
+ span{
+  display: none;
+}
  
 }
