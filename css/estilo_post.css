@@ -11,7 +11,7 @@
     margin: 0;
     background: #fafafa;
     color: #262626;
-    height: 500vw;
+    
   }
   
 
@@ -105,6 +105,10 @@
   
     .sidebar button > span {
       width: 50px;
+    }
+    .span_hidden{
+      opacity: 0;
+      visibility: hidden;
     }
   
     .sidebar button > span > span {
@@ -241,6 +245,9 @@
     border: 1px solid;
     padding: 3px 20px ;
     border-radius: 25px;
+    background-color: #ff9606;
+    color: #fff ;
+    
   }
 
    .form-control {
@@ -279,7 +286,7 @@
     height: 0.65em;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--form-control-color);
+    box-shadow: inset 1em 1em #ff9606;
     transform-origin: bottom left;
     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
   }
@@ -304,13 +311,14 @@
   .avaliacao{
     width: 50px;
     height: 50px;
-    background-color: red;
+    background-color: #ff5e33;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
     box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .avaliacao img{
@@ -320,7 +328,7 @@
   }
 
   .color2{
-    background-color: yellow;
+    background-color: #ffbf00;
   }
   #generate-pdf {
     display: flex;
@@ -329,7 +337,8 @@
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    background-color: rgba(146, 146, 146, 0.644);
+    background-color: silver;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   #generate-pdf img{
@@ -345,20 +354,25 @@
     width: 100%;
     font-size: 17px;
     margin-top: 50px;
+    padding-bottom: 20px;
     background-color: #f8f8f8;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 
   }
   #comentarios p{
     margin-top: 20px;
   }
   #comentar{
-    background-color: rgb(216, 216, 216);
-    padding: 20px;
+    background-color: #ff9606;
+    
     border-radius: 10px;
+    width: 500px;
+    padding: 0 0 20px 40px;
+    text-align: justify;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   #comentar button{
@@ -373,9 +387,10 @@
   #comentar input{
     width: 250px;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
+    background-color: #dbdbdb;
     border: 1px solid gray;
   }
   #comentar button:hover{
-    background-color: #ff9606;
+    background-color: #ffbf00;
   }

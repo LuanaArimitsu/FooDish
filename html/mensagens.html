@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styleMSG.css">
+
+
+</head>
+<body>
+    <div class="sidebar">
+        <header class="sidebar-header">
+            <a href="./paginaInicial.html">
+            <img class="logo-img" src="../Projeto Foodish Mensagens/Imagens/Group 12.png" />
+            </a>
+        </header>
+        <nav>
+
+            <button>
+                <span class="icons">
+                    <a class="linksNav" href="./paginaInicial.html">
+                    <img src="../Projeto Foodish Mensagens/../img2/home.png" alt="">
+                    <span>Pagina Inicial</span>
+                    </a>
+                </span>
+            </button>
+
+            <button>
+                <span class="icons">
+                    <img src="../Projeto Foodish Mensagens/Imagens/mingcute_search-fill.png">
+                    <span>Pesquisar</span>
+
+                </span>
+            </button>
+
+            <button>
+                <span class="icons">
+                    <a class="linksNav" href="./reels.html">
+                    <img src="../Projeto Foodish Mensagens/Imagens/fluent-emoji-flat_pizza.png" alt="">
+                    <span class="nomes">Reels</span>
+                    </a>
+                </span>
+            </button>
+
+            <button>
+                <span class="icons">
+                    <img src="../img2/mensagens.png" alt="">
+                    <span>Mensagens</span>
+                </span>
+            </button>
+
+            <button>
+                <span class="icons">
+                    <img src="../Projeto Foodish Mensagens/Imagens/Group 8.png" alt="">
+                    <span>Notificações</span>
+                </span>
+            </button>
+
+            <button>
+                <span class="icons">
+                    <img src="../Projeto Foodish Mensagens/Imagens/ic_outline-more-time.png" alt="">
+                    <span>Criar</span>
+                </span>
+            </button>
+
+            <button>
+                <span class="icons">
+                    <a href="./profile.html">
+                    <img src="../img/fotoPerfilP.jpg" width="20%" />
+                    <span>Perfil</span>
+                    </a>
+                </span>
+            
+            </button>
+        </nav>
+        
+        
+    </div>
+
+    <div id="caixafnd">
+        <div id="img1">
+            <a href="#"><img src="../Projeto Foodish Mensagens/Imagens/Frame.png"></a>
+        </div>
+        <div id="img2">
+            <a href="#"><img src="../Projeto Foodish Mensagens/Imagens/anexar.png"></a>
+        </div>
+        <div id="img3">
+            <a href="#"><img src="../Projeto Foodish Mensagens/Imagens/gif.png"></a>
+        </div>
+        <div id="img4">
+            <a href="#"><img src="../Projeto Foodish Mensagens/Imagens/emogi.png"></a>
+         </div>
+    </div>
+    <div class="chat-area">
+        <!-- Área de conversa -->
+        <div class="conversation">
+            <!-- Mensagens da conversa apareceriam aqui -->
+        </div>
+        <!-- Caixa de entrada de mensagem -->
+        <textarea class="message-input" placeholder="Digite sua mensagem..."></textarea>
+    </div>
+
+    <div class="user-list">
+        <!-- Lista de pessoas disponíveis para conversar -->
+        <input type="text" class="search-box" placeholder="Pesquisar pessoas...">
+            <!-- Lista de pessoas disponíveis para conversar -->
+            <!-- Caixa de pesquisa -->
+            <input type="text" class="search-box" placeholder="Pesquisar pessoas...">
+            <li class="semponto"><img id="imagem1" src="../Projeto Foodish Mensagens/Imagens/icone-msg.png"><a href="#" class="username">José Barros</a></li>
+            <li class="semponto"><img id="imagem1" src="../Projeto Foodish Mensagens/Imagens/icone-msg.png"><a href="#" class="username">André Luan</a></li>
+            <li class="semponto"><img id="imagem1" src="../Projeto Foodish Mensagens/Imagens/icone-msg.png"><a href="#" class="username">Gustavo Burgos</a></li>
+            <li class="semponto"><img id="imagem1" src="../Projeto Foodish Mensagens/Imagens/icone-msg.png"><a href="#" class="username">Isac Rocha </a></li>
+            <li class="semponto"><img id="imagem1" src="../Projeto Foodish Mensagens/Imagens/icone-msg.png"><a href="#" class="username">Daiane Delvalle</a></li>
+            <li class="semponto"><img id="imagem1" src="../Projeto Foodish Mensagens/Imagens/icone-msg.png"><a href="#" class="username">Bárbara Barros</a></li>
+            <li class="semponto"><img id="imagem1" src="../Projeto Foodish Mensagens/Imagens/icone-msg.png"><a href="#" class="username">Alonso Estrada</a></li>
+            <li class="semponto"><img id="imagem1" src="../Projeto Foodish Mensagens/Imagens/icone-msg.png"><a href="#" class="username">Denis Branco </a></li>
+            <li class="semponto"><img id="imagem1" src="../Projeto Foodish Mensagens/Imagens/icone-msg.png"><a href="#" class="username">Dário Barros</a></li>
+            <li class="semponto"><img id="imagem1" src="../Projeto Foodish Mensagens/Imagens/icone-msg.png"><a href="#" class="username">Adriano Hugo</a></li>
+            <li class="semponto"><img id="imagem1" src="../Projeto Foodish Mensagens/Imagens/icone-msg.png"><a href="#" class="username">Tessália Lozano</a></li>
+            <li class="semponto"><img id="imagem1" src="../Projeto Foodish Mensagens/Imagens/icone-msg.png"><a href="#" class="username">Cássia Domingues</a></li>
+    
+    </div>
+
+    <!-- JavaScript (opcional) para interações em tempo real -->
+    <script>
+        // Selecionar elementos
+        const messageInput = document.querySelector('.message-input');
+        const conversation = document.querySelector('.conversation');
+
+        // Adicionar evento de envio de mensagem
+        messageInput.addEventListener('keypress', function (event) {
+        if (event.key === 'Enter') {
+            const message = messageInput.value.trim(); // Remover espaços em branco extras
+
+        if (message !== '') {
+            // Criar um elemento de mensagem
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', 'msgn_text');
+            messageElement.textContent = message;
+
+            // Crie um elemento para a hora
+            const timestamp = document.createElement('span');
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0'); // Formate a hora como HH
+            const minutes = now.getMinutes().toString().padStart(2, '0'); // Formate os minutos como MM
+            timestamp.textContent = ` - ${hours}:${minutes}`; // Crie uma string de hora no formato HH:MM
+
+            // Adicione o elemento da hora à mensagem
+            messageElement.appendChild(timestamp);
+
+            // Adicionar a mensagem à conversa
+            conversation.appendChild(messageElement);
+
+            // Limpar a caixa de entrada
+            messageInput.value = '';
+
+            // Rolagem automática para a última mensagem
+            conversation.scrollTop = conversation.scrollHeight;
+            }
+        }
+    });
+    </script>
+    
+</body>
+</html>
