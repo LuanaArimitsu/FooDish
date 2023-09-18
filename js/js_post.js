@@ -1,20 +1,35 @@
 
-
-// Get all checkboxes and labels
 const checkboxes = document.querySelectorAll('.checkbox');
 const labels = document.querySelectorAll('.form-control');
 
-// Add event listener to each checkbox
 checkboxes.forEach((checkbox, index) => {
   checkbox.addEventListener('change', function() {
-    // If checkbox is checked, apply text-decoration: line-through to the corresponding label
+    
     if (checkbox.checked) {
       labels[index].style.textDecoration = 'line-through';
+      
     } else {
-      // If checkbox is unchecked, remove text-decoration: line-through from the corresponding label
+      
       labels[index].style.textDecoration = 'none';
     }
   });
+});
+
+const btnGenerate = document.querySelector("#generate-pdf");
+
+btnGenerate.addEventListener("click", () => {
+
+    const content = document.querySelector("#content");
+
+    const options = {
+        margin: [10, 10, 10, 10],
+        filename: "arquivo.pdf",
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+    };
+
+    html2pdf().set(options).from(content).save();
+
 });
 
 

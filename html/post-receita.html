@@ -9,8 +9,13 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <link rel="stylesheet" href="../css/estilo_post.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
 </head>
-<body>
+<body id="content">
 
     <!-- sidebar -->
 
@@ -88,7 +93,7 @@
     </aside>
 
       <!-- imagem -->
-      <main>
+      <main id="content">
         <section id="conteiner_head">
 
           <section id="perfil">
@@ -116,7 +121,7 @@
             <h1>Ingredientes</h1>
           </section>
 
-          <p>Para a carne:</p>
+          <p class="style_p">Para a carne:</p>
 
           <label class="form-control">
             <input type="checkbox" class="checkbox" name="checkbox" />
@@ -146,7 +151,7 @@
             <input type="checkbox" class="checkbox" name="checkbox" />
             Orégano a gosto
           </label>
-          <p>
+          <p class="style_p">
             Para a montagem:
           </p>
           <label class="form-control">
@@ -230,11 +235,23 @@
                     40 comentarios
                 </p>
               </section>
-              <section class="avaliacao color3">
-                <a href="#">
-                <img src="../imagens_post/download-direto.png" alt=""></a>
-              </section>
+
+              <button id="generate-pdf"><img src="../imagens_post/download-direto.png" alt=""></a></button>
+
+            </section>
+
+            <section id="comentarios">
+              <section id="comentar">
+                <p><span>pedro_pizza: </span>Lorem ipsum dolor sit amet.</p>
+                <p><span>maria_123: </span>Lorem ipsum dolor sit amet.</p>
+                <p><span>roberto_321: </span>Lorem ipsum dolor sit amet.</p>
+                <p><span>joao_55: </span>Lorem ipsum dolor sit amet.</p>
               
+              
+                <input type="text" placeholder="comentar">
+                <button>Postar</button>
+              </section>
+
             </section>
 
           
