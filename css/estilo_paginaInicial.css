@@ -169,6 +169,7 @@ body{
 
   .linksNav{
     text-decoration: none;
+    color: #000;
   }
 /*Fim sidebar*/
 
@@ -435,5 +436,8 @@ ul{width: 400px;
   margin-top: 40px;
  }
 
+ span{
+  display: none;
+ }
  
 }
