@@ -1,0 +1,287 @@
+/*inicio sidebar*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    background: #ffffff;
+    border-right: 1px solid #dbdbdb;
+    transition: 0.3s;
+    z-index: 10;
+  }
+  
+  .sidebar-header {
+    width: 100%;
+    margin-bottom: 44px;
+  }
+  
+  .logo-icon {
+    display: none;
+    font-size: 28px;
+    height: 35px;
+    width: 51px;
+    text-align: center;
+  }
+  
+  .logo-img {
+    margin-left: 14px;
+    height: 32px;
+  }
+  
+  
+  .sidebar button {
+    height: 60px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  .sidebar button > span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 48px;
+    padding: 0 12px;
+    border-radius: 24px;
+    line-height: 1;
+  }
+  
+  .sidebar button:hover > span {
+    background: #f2f2f2;
+  }
+  
+  .sidebar button:hover > span :is(i, img) {
+    scale: 1.05;
+  }
+  
+  .sidebar button > span > span {
+    transition: 0.3s;
+  }
+  
+  @media (width < 780px) {
+    .logo-img {
+      display: none;
+    }
+  
+    .logo-icon {
+      display: block;
+    }
+  
+    .sidebar {
+      width: 72px;
+    }
+  
+    .sidebar button > span {
+      width: 50px;
+    }
+  
+    .sidebar button > span > span {
+      opacity: 0;
+      visibility: hidden;
+    }
+  
+    
+  }
+  
+  .sidebar button i {
+    position: relative;
+    font-size: 28px;
+    transition: 0.2s;
+  }
+  
+  .sidebar button img {
+    width: 28px;
+    height: 28px;
+    transition: 0.2s;
+  
+  }
+  
+  .sidebar button i > span {
+    display: grid;
+    place-items: center;
+    height: 20px;
+    padding: 0 4px;
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    border: 1px solid #ffffff;
+    background: #ff2f40;
+    color: #f9f9f9;
+    font-size: 12px;
+    font-family: BlinkMacSystemFont;
+    font-style: normal;
+  }
+  
+  .sidebar button i > em {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 2px;
+    right: -1px;
+    border: 1px solid #ffffff;
+    background: #ff2f40;
+    color: #f9f9f9;
+    font-size: 12px;
+    font-family: BlinkMacSystemFont;
+    font-style: normal;
+  }
+  
+  .sidebar button span {
+    font-size: 17px;
+  }
+  
+  .sidebar > nav {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .sidebar > nav button:last-child {
+    margin-top: auto;
+  }
+  
+  
+  .linksNav{
+    text-decoration: none;
+  }
+  /*Fim sidebar*/
+
+  /* Estilos para o corpo da página */
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+/* Estilos para a barra lateral esquerda */
+.sidebar {
+    width: 15%;
+    background-color: #f2f2f2;
+    overflow-y: auto;
+}
+
+#caixafnd{
+    position: fixed;
+    background-color: #f2f2f2;
+    width: 65%;
+    height: 80px;
+    bottom: 0;
+    left: 15%;
+}
+
+/* Estilos para a área de conversa no meio */
+.chat-area {
+    height: auto;
+    margin-left: 16%;
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+
+}
+
+/* Estilos para a lista de pessoas à direita */
+.user-list {
+    width: 20%;
+    background-color: #f2f2f2;
+    overflow-y: auto;
+    font-size: 25px;
+}
+
+.semponto{
+    list-style-type: none;
+
+}
+.semponto img{
+    padding: 20px;
+    vertical-align: middle;
+}
+
+/* Estilos para a caixa de entrada de mensagem */
+.message-input {
+    position: fixed;
+    width: 47%;
+    left: 28%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    top: 670px;
+    font-size: 18px;
+    padding-top: 15px;
+    resize: none;
+}
+
+.search-box {
+    width: 100%;
+    position: fixed;
+    padding: 8px;
+    border: 1px solid #ccc;
+    bottom: 0;
+    height: 63px;
+    font-size: 18px;
+}
+
+.username{
+    text-decoration: none;
+
+}
+
+#caixafnd #img1 img{
+    top: 22px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    float: left;
+}
+#caixafnd #img2 img{
+    top: 20px;
+    left: 40px;
+    float: left;
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+#caixafnd #img3 img{
+    float: left;
+    top: 20px;
+    left: 50px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+#caixafnd #img4 img{
+    top: 20px;
+    left: 81%;
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+
+.msgn_text{
+    font-size: 25px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: max-content;
+    
+}
+
+#imagem1{
+    width: 35px;
+    height: 35px;
+    }
+  

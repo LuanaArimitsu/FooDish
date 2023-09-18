@@ -75,7 +75,7 @@
 
   .linksNav{
     text-decoration: none;
-    color: #000;
+    color: black;
   }
   
   @media (width < 780px) {

@@ -3,6 +3,31 @@ body {
     font-family: "Roboto", serif;
     background: linear-gradient(135deg, black, #37313a);
   }
+
+  #voltar{
+    position: absolute;
+   width: 40px;
+   height: 40px;
+   z-index: 10;
+   top: 70%;
+
+  }
+
+  #voltar img{
+    width: 40px;
+    height: 40px;
+    
+  }
+
+  #botao{
+    background-color: transparent;
+    
+  }
+
+  .linksNav{
+    text-decoration: none;
+   
+  }
   
   .carousel {
     position: relative;
