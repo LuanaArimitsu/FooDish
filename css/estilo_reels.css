@@ -94,6 +94,10 @@
       opacity: 0;
       visibility: hidden;
     }
+
+    .linksNav{
+      display: none;
+    }
   }
   
   .sidebar button i {
@@ -156,6 +160,11 @@
   .sidebar > nav button:last-child {
     margin-top: auto;
   }
+
+  .linksNav{
+    text-decoration: none;
+  }
+
 /*Fim sidebar*/
 
 /*inicio reels*/
@@ -177,6 +186,8 @@
 ::-webkit-scrollbar{
     width: 0;
 }
+
+
 
 .container .reels_videos{
     position: relative;
