@@ -11,7 +11,7 @@
     margin: 0;
     background: #fafafa;
     color: #262626;
-    height: 500vw;
+    
   }
   
 
@@ -247,6 +247,7 @@
     border-radius: 25px;
     background-color: #ff9606;
     color: #fff ;
+    
   }
 
    .form-control {
@@ -317,6 +318,7 @@
     align-items: center;
     margin-right: 10px;
     box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .avaliacao img{
@@ -336,6 +338,7 @@
     justify-content: center;
     align-items: center;
     background-color: silver;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   #generate-pdf img{
@@ -363,9 +366,13 @@
     margin-top: 20px;
   }
   #comentar{
-    background-color: rgb(216, 216, 216);
-    padding: 20px;
+    background-color: #ff9606;
+    
     border-radius: 10px;
+    width: 500px;
+    padding: 0 0 20px 40px;
+    text-align: justify;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   #comentar button{
@@ -380,9 +387,10 @@
   #comentar input{
     width: 250px;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
+    background-color: #dbdbdb;
     border: 1px solid gray;
   }
   #comentar button:hover{
-    background-color: #ff9606;
+    background-color: #ffbf00;
   }
