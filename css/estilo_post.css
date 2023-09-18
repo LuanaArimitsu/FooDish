@@ -106,6 +106,10 @@
     .sidebar button > span {
       width: 50px;
     }
+    .span_hidden{
+      opacity: 0;
+      visibility: hidden;
+    }
   
     .sidebar button > span > span {
       opacity: 0;
@@ -241,6 +245,8 @@
     border: 1px solid;
     padding: 3px 20px ;
     border-radius: 25px;
+    background-color: #ff9606;
+    color: #fff ;
   }
 
    .form-control {
@@ -279,7 +285,7 @@
     height: 0.65em;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--form-control-color);
+    box-shadow: inset 1em 1em #ff9606;
     transform-origin: bottom left;
     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
   }
@@ -304,7 +310,7 @@
   .avaliacao{
     width: 50px;
     height: 50px;
-    background-color: red;
+    background-color: #ff5e33;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -320,7 +326,7 @@
   }
 
   .color2{
-    background-color: yellow;
+    background-color: #ffbf00;
   }
   #generate-pdf {
     display: flex;
@@ -329,7 +335,7 @@
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    background-color: rgba(146, 146, 146, 0.644);
+    background-color: silver;
   }
 
   #generate-pdf img{
@@ -345,11 +351,12 @@
     width: 100%;
     font-size: 17px;
     margin-top: 50px;
+    padding-bottom: 20px;
     background-color: #f8f8f8;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 
   }
   #comentarios p{
