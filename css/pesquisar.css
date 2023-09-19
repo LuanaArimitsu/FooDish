@@ -154,7 +154,8 @@
  
     grid-row-end: 3;
     grid-column-end: 4;
-    background-image: url(../imagens_post/prato.jpeg);
+    background-image: url(../imagens_post/prato.png);
+       background-size: cover;
     
  }
  #item-5 {
