@@ -21,13 +21,8 @@ body {
 }
 
 
-button {
-  border: 0;
-  cursor: pointer;
-  font-size: inherit;
-  font-weight: inherit;
-  font-family: inherit;
-  color: inherit;
+form a {
+ 
 }
 
 a {
@@ -66,13 +61,13 @@ input::placeholder {
   transition: all 0.2s ease;
 }
 
-.btns-login button {
+.btns-login a {
   background: var(--bg-input);
 }
 
-.btns-login button:hover,
-button.ativo,
-.btns-login button.ativo:hover {
+.btns-login a:hover,
+a.ativo,
+.btns-login a.ativo:hover {
   background: var(--bg-login);
 }
 
