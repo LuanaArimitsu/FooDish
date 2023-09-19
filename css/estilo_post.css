@@ -356,10 +356,11 @@
     margin-top: 50px;
     padding-bottom: 20px;
     background-color: #f8f8f8;
+    
     display: flex;
-    /*flex-direction: column;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;*/
+    align-items: center;
 
   }
   #comentarios p{
