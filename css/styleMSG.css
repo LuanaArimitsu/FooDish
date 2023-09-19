@@ -215,13 +215,14 @@
 .message-input {
     position: fixed;
     width: 47%;
-    left: 28%;
+    left: 27%;
     border: 1px solid #ccc;
     border-radius: 15px;
-    top: 670px;
+    top: 900px;
     font-size: 18px;
     padding-top: 15px;
     resize:none;
+  z-index: 1;
 
 }
 
