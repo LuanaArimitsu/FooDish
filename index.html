@@ -49,7 +49,7 @@
                 </div>
 
 
-                <a href="html/paginaInicial.html" type="submit" class="submit" id="botaoEntrar">Entrar</a>
+                <button type="submit" class="submit" id="botaoEntrar" onclick="verificarLogin()">Entrar</button>
 
 
 
@@ -73,7 +73,7 @@
                 com o Google</a></p>
             </div>
 
- <a id="es" href="/" class="forgot">Esqueceu a senha?</a>
+ <a id="es" href="/" class="forgot" >Esqueceu a senha?</a>
 
 
 
@@ -182,6 +182,31 @@
 
 
 	<script>
+
+function verificarLogin() {
+
+var usuario = document.getElementById('usuario-entrar').value;
+
+var senha = document.getElementById('senha-entrar').value;
+
+
+
+// Verificar se o usuário e a senha correspondem aos valores desejados
+
+if (usuario === 'pedro' && senha === '123') {
+    window.location.href = "./html/paginaInicial.html";
+    alert('Login bem-sucedido!');
+}
+else {
+    alert('Usuário ou senha incorretos. Tente novamente.');
+}
+
+}
+
+
+
+
+
 		const btns = document.querySelectorAll('.btns-login button')
 const allInputs = document.querySelectorAll('.ct-input input')
 const inputsCriarConta = document.querySelectorAll('#criar .ct-input input')
