@@ -53,6 +53,7 @@ input::placeholder {
 
 .btns-login {
   display: flex;
+
 }
 
 .btns-login>* {
@@ -203,6 +204,11 @@ input:focus {
   outline: 2px solid #ff9b07;
 }
 
+#botaoEntrar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .submit {
   width: 320px;
   padding: 15px 10px;
