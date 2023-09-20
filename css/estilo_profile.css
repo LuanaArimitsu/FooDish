@@ -95,7 +95,6 @@
     visibility: hidden;
   }
 
-  
 }
 
 .sidebar button i {
@@ -159,11 +158,159 @@
   margin-top: auto;
 }
 
-
 .linksNav{
   text-decoration: none;
+  color: #000;
   
 }
+
+/*visualização celular*/
+@media only screen and (max-width: 468px){
+  
+    .container{
+        margin-left: 30px;
+      
+    }
+
+    .stories_area{
+      margin-left: 4px;
+        width: 90px;
+    }
+
+    #remove{
+      display: none;
+    }
+    
+    .caixa1{
+      width: 100%;
+      
+      display: flex;
+      align-items: center;
+    
+      flex-wrap: wrap;
+      flex-direction: row;
+    
+      margin-right: 100px;
+      margin-top: 50px;
+     }
+
+     .salvar img{
+      width: 80px;
+      height: 60px;
+      margin-left: -30px;
+     }
+
+     .publicacoes img{
+      width: 350px;
+      height: 150px;
+
+     margin-right: 300px;
+     }
+  
+     .caixinha1{
+      display: flex;
+      flex-direction: row;
+      margin-left: -180px;
+     }
+  
+     .caixinha2{
+      display: flex;
+      flex-direction: row;
+
+     margin-left: -150px;
+     }
+
+     .linksNav{
+      text-decoration: none;
+    }
+
+}
+
+/*visualizacao tablet*/
+@media only screen and (max-width: 1024px){
+
+  .logo-img {
+    display: none;
+  }
+
+  .logo-icon {
+    display: block;
+  }
+
+  .sidebar {
+    width: 72px;
+  }
+
+  .sidebar button > span {
+    width: 50px;
+  }
+
+  .sidebar button > span > span {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .container{
+   margin-right: 250px;
+  
+}
+
+.stories_area{
+  margin-right: 10px;
+
+}
+
+.caixa1{
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  margin-left: 5px;
+  margin-right: 100px;
+  margin-top: 50px;
+ }
+
+ .salvar img{
+  width: 80px;
+  height: 60px;
+  margin-right: 90px;
+ }
+
+ .publicacoes img{
+  width: 650px;
+  height: 250px;
+
+ margin-right: 300px;
+ }
+
+ .caixinha1{
+  display: flex;
+  flex-direction: row;
+
+  margin-right: 150px;
+
+ }
+
+ .caixinha2{
+  display: flex;
+  flex-direction: row;
+  margin-left: 70px;
+  margin-top: 40px;
+ }
+
+ span{
+  display: none;
+}
+ 
+}
+
+
+
+
 /*Fim sidebar*/
 
 
