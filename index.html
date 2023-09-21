@@ -49,7 +49,7 @@
                 </div>
 
 
-                <button type="submit" class="submit" id="botaoEntrar" onclick="verificarLogin()">Entrar</button>
+                <button type="submit" class="submit" id="botaoEntrar" onclick="verificarLogin()"><a href="./html/paginaInicial.html">Entrar</a></button>
 
 
 
@@ -181,30 +181,8 @@
 
 
 
-	<script>
 
-function verificarLogin() {
-
-var usuario = document.getElementById('usuario-entrar').value;
-
-var senha = document.getElementById('senha-entrar').value;
-
-
-
-// Verificar se o usuário e a senha correspondem aos valores desejados
-
-if (usuario === 'pedro' && senha === '123') {
-    window.location.href = "./html/paginaInicial.html";
-    alert('Login bem-sucedido!');
-}
-else {
-    window.location.href = "index.html";
-    alert('Usuário ou senha incorretos. Tente novamente.');
-}
-
-}
-
-
+	 <script> 
 
 
 

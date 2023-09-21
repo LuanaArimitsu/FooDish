@@ -219,8 +219,17 @@ input:focus {
   transition: all 0.2s ease;
 }
 
+.submit a{
+	width: 320px;
+	text-decoration: none;
+	
+}
+
 .submit:hover {
   background: #ffae36;
+}
+.submit a:hover {
+  color: #fff;
 }
 
 
