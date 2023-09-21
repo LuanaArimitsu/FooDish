@@ -227,9 +227,10 @@
     left: 27%;
     border: 1px solid #ccc;
     border-radius: 15px;
-    top: 900px;
+    top: 610px;
     font-size: 18px;
     padding-top: 15px;
+    margin-left: 20px;
     resize:none;
   z-index: 1;
 
